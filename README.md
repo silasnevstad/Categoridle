@@ -1,6 +1,6 @@
 # Categoridle
 Wordle but with Categories!
-[Play it here](www.categoridle.com)
+[Play it here](categoridle.com)
 <!-- TABLE OF CONTENTS -->
 <div id="top"></div>
 <details>
