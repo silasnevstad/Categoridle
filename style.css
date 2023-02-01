@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6; 
+}
+
+p {
+  font-size: 10px;
+  margin: 0;
+}
+  
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#ownerTag {
+  font-size: 9px;
+  margin-left: 2px;
+  align-self: flex-end;
+}
+
+#reveal-word, #reveal-letter, #new-game {
+  margin-left: 1vh;
+}
+
+#category {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 5px;
+}
+  
+h1 {
+  margin: 0;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #6ca965;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* margin-left: 10px; */
+}
+
+.word-container {
+  /* display: flex; */
+  display: grid;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+
+.letter-card {
+  perspective: 1000px;
+  width: 13vh;
+  height: 10vh;
+  background-color: #efefef;
+  border: 1px solid rgba(137, 137, 137, 0.301);
+  text-align: center;
+  font-weight: bolder;
+  /* box-shadow: #82828230 2px 2px 0px 0px; */
+  line-height: 10vh;
+  font-size: 36px;
+  margin-left: 1.5%;
+}
+
+.letter-card .letter-card-front, .letter-card .letter-card-back {
+  position: absolute; /* Position the front and back elements absolute */
+  backface-visibility: hidden; /* Hide the back face of the card */
+  transition: transform 0.8s ease-in-out; /* Add a transition for the transform property */
+}
+
+.letter-card .letter-card-back {
+  transform: rotateY(180deg); /* Rotate the back face by 180 degrees */
+}
+
+.letter-card.flipped .letter-card-front {
+  transform: rotateY(180deg); /* Rotate the front face by 180 degrees when the card is flipped */
+}
+
+.letter-card.flipped .letter-card-back {
+  transform: rotateY(0); /* Rotate the back face back to 0 degrees when the card is flipped */
+}
+
+
+.letter-card-small {
+  width: 11vh;
+  height: 9vh;
+  background-color: #efefef;
+  border: 1px solid rgba(137, 137, 137, 0.301);
+  text-align: center;
+  font-weight: bolder;
+  /* box-shadow: #82828230 2px 2px 0px 0px; */
+  line-height: 9vh;
+  font-size: 36px;
+  margin-left: 1%;
+}
+
+.letter-card-space {
+  width: 13vh;
+  height: 10vh;
+  background-color: #f6f6f6;
+  margin-left: 2%;
+}
+
+
+.keyboard {
+      position: absolute; bottom: 0; width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+
+.keyboard-key {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+  line-height: -20px;
+  font-size: 15px;
+  margin-right: 5px;
+  border-radius: 15%;
+  text-align: center;
+  /* margin-bottom: 5px; */
+}
+
+
+.enter-key {
+  width: 70px;
+}
+
+
+.backspace-key {
+  width: 70px;
+}
+
+
+footer {
+  background-color: #f6f6f6;
+  padding: 20px;
+  text-align: center;
+  position: absolute; bottom: auto; width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #ownerTag {
+      font-size: 5px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    select {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    button {
+      padding: 5px 10px;
+      background-color: #6ca965;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 5px;
+      /* margin-left: 10px; */
+    }
+    
+    .letter-card {
+      width: 7vh;
+      height: 6vh;
+      line-height: 6vh;
+      font-size: 15px;
+      margin-left: 1%;
+    }
+    
+    .letter-card-space {
+      width: 7vh;
+      height: 6vh;
+      margin-left: 1%;
+    }
+    
+    .letter-card-small {
+      width: 5vh;
+      height: 4vh;
+      /* box-shadow: #82828230 2px 2px 0px 0px; */
+      line-height: 4vh;
+      font-size: 15px;
+      margin-left: 0.7%;
+    }
+    
+    .keyboard {
+      position: absolute; bottom: 0; width: 100%;
+      padding-bottom: 20px;
+    }
+    
+    .backspace-key {
+      width: 50px;
+    }
+    
+    .enter-key {
+      width: 70px;
+    }
+}

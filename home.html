@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Categoridle by SN</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Categoridle</h1>
+    <p id="ownerTag">
+      Made by Silas Nevstad
+    </p>
+
+    <select id="category">
+      <option value="normal">Normal</option>
+      <option value="cars">Car Brands</option>
+      <option value="countries">Countries</option>
+      <option value="capitals">Capital Cities</option>
+      <option value="brands">Companies</option>
+      <option value="athletes">Athletes</option>
+      <option value="movies">Movies</option>
+      <option value="music">Music</option>
+      <option value="compsci">Comp Sci.</option>
+      <option value="all">All (excluding normal)</option>
+    </select>
+    <button id="show-hide-keyboard">Show Keyboard</button>
+    <button id="reveal-letter">Reveal Letter</button>
+    <button id="reveal-word">Reveal Word</button>
+    <button id="new-game">New Game</button>
+  </header>
+  <main>
+    <p id="selected-category"></p>
+    <div class="word-container">
+      <!-- Word container for displaying the word -->
+    </div>
+    <div class="keyboard">
+      <!-- Keyboard buttons for guessing letters -->
+    </div>
+    
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="logic.js"></script>
+</body>
+</html>
