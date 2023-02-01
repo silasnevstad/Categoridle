@@ -1,5 +1,3 @@
-Copyright © 2022 Silas Nevstad
-
 # Categoridle
 Wordle but with Categories!
 <!-- TABLE OF CONTENTS -->
