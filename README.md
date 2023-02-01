@@ -13,7 +13,7 @@ Wordle but with Categories!
 
 ### Built With
 * [HTML](https://www.w3schools.com/html/)
-* [CSS] (https://www.w3schools.com/css/)
+* [CSS](https://www.w3schools.com/css/)
 * [Javascript]([https://www.w3schools.com/html/](https://www.javascript.co))
 
 <p align="right">(<a href="#top">back to top</a>)</p>
